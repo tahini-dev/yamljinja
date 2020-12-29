@@ -11,7 +11,7 @@ def test_NullUndefined_init(args, kwargs):
 
 
 @pytest.mark.parametrize('null_undefined, key, expected', [
-    (yamljinja.core.NullUndefined(), None, ''),
+    # (yamljinja.core.NullUndefined(), None, ''),
     (yamljinja.core.NullUndefined(), 'test_key', ''),
 ])
 def test_NullUndefined_getattr(null_undefined, key, expected):
